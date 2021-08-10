@@ -65,6 +65,13 @@ $red: #F34A15;
 }
 
 @media screen and (max-width: 1200px) {
+  .contacts {
+    padding: 100px 0;
+  }
+  .single-contact {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .stocks {
     padding-bottom: 80px;
   }
@@ -125,6 +132,37 @@ $red: #F34A15;
 }
 
 @media screen and (max-width: 1024px) {
+  .default-block__container {
+    padding-top: 30px;
+  }
+  .contacts__container {
+    flex-wrap: wrap;
+  }
+  .contacts {
+    padding-bottom: 0;
+  }
+  .single-contact {
+    width: 50%;
+    margin-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    &:nth-child(2n) {
+      border-right: none;
+    }
+  }
+  .faq-container {
+    flex-direction: column;
+  }
+  .faq-column {
+    width: 100%;
+    margin-right: 0;
+  }
+  .single-faq {
+    margin-bottom: 7px;
+    &:last-child {
+      margin-bottom: 7px;
+    }
+  }
   .single-stock {
     .img {
       height: 153px;
@@ -568,13 +606,45 @@ $red: #F34A15;
     transition: max-height 0.4s ease, padding-top 0.5s ease;
 
   }
+  .single-faq > span {
+    align-items: flex-start;
+    line-height: 21px;
+    &::before {
+      margin-top: 2px;
+
+    }
+    &::after {
+      top: 28px;
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
+  .page-not>p {
+    font-size: 21px;
+    line-height: 32px;
+  }
+  .page-not {
+    .cont {
+      p {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+    }
+  }
+  .faq {
+    padding-bottom: 73px;
+  }
+  .faq-text {
+    padding: 20px;
+  }
   .tag {
     font-size: 8px;
     padding: 2px 15px;
   }
+
   .single-stock {
     width: calc(50% - 10px);
     margin-right: 20px;
@@ -628,6 +698,19 @@ $red: #F34A15;
         margin-right: 0;
         width: 100%;
         margin-bottom: 33px;
+        * > & {
+          z-index: 2;
+          position: relative;
+        }
+        &::after {
+          width: 105px;
+          height: 98px;
+          right: 0;
+          bottom: 40px;
+          transform: none;
+          left: auto;
+          z-index: -1;
+        }
         > span {
           font-size: 21px;
         }
@@ -1036,6 +1119,20 @@ $red: #F34A15;
 }
 
 @media screen and (max-width: 575px) {
+  .single-contact {
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-right: none;
+    border-bottom: 1px solid #ECECEC;
+    margin-bottom: 0;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .contacts {
+    padding: 55px 0 40px;
+  }
   .sort-selector {
     margin-right: 0;
     width: 100%;

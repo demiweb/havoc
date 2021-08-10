@@ -234,3 +234,18 @@ function openSeoText() {
     }
 }
 openSeoText();
+
+let faqSpan = [...document.querySelectorAll('.single-faq > span')];
+
+function openFaqText() {
+    if (!faqSpan.length) {
+
+    } else {
+        faqSpan.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.closest('.single-faq').classList.toggle('open');
+            })
+        })
+    }
+}
+openFaqText();
