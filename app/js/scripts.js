@@ -249,3 +249,47 @@ function openFaqText() {
     }
 }
 openFaqText();
+
+let showMoreCatalog = document.querySelector('.show-more');
+
+function showMoreCall() {
+    if (!showMoreCatalog) {
+
+    } else {
+        showMoreCatalog.addEventListener('click', () => {
+            showMoreCatalog.classList.toggle('open');
+            showMoreCatalog.closest('.container').querySelector('.catalog-list').classList.toggle('open');
+        })
+    }
+}
+showMoreCall();
+let cardPhotosBlock = [...document.querySelectorAll('.card-photos')];
+function startPhotosSlider() {
+    if (!cardPhotosBlock.length) {
+
+    } else {
+        cardPhotosBlock.forEach((blc) => {
+            let mainSlides = blc.querySelector('.card-photos__container');
+            let thumbsSlides = blc.querySelector('.card-photos__thumbs');
+           $(mainSlides).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                variableWidth: true,
+                fade: true,
+                asNavFor: thumbsSlides
+            });
+            $(thumbsSlides).slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: mainSlides,
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true,
+                variableWidth: true,
+            });
+        })
+    }
+}
+startPhotosSlider();
+
