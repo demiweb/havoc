@@ -181,173 +181,170 @@
     <section class="cart-page has-shadow">
         <div class="container">
             <div class="top-line">
-                <span>Корзина</span>
+                <span>Оформление заказа</span>
             </div>
-            <div class="remove-cart">
-                <p>Очистить корзину</p>
-                <button class="remove-item">
-                    <img src="./img/cancel-i.svg" alt="">
-                </button>
-            </div>
-            <div class="cart-table">
-                <div class="cart-table__head">
-                    <div class="cart-table__name">Товар</div>
-                    <div class="cart-table__name">Характеристики</div>
-                    <div class="cart-table__name">Количество</div>
-                    <div class="cart-table__name">Цена</div>
-                    <div class="cart-table__name">Сумма</div>
-                    <div class="cart-table__name">Ред.</div>
+
+            <div class="cart-checkout">
+                <div class="checkout-form">
+                    <div class="checkout-form__part">
+                        <div class="checkout-form__name">
+                            Введите ваши данные:
+                        </div>
+                        <div class="checkout-form__right">
+                            <p>Данные получателя <strong>(получение заказа по паспорту)</strong></p>
+                            <div class="form">
+                                <form action="">
+                                    <input type="text" placeholder="Введите ФИО">
+                                    <input type="text" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _">
+                                    <input type="text" placeholder="Введите Email">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="checkout-form__part">
+                        <div class="checkout-form__name">
+                            Выберите способ доставки:
+                        </div>
+                        <div class="checkout-form__right">
+                            <div class="form">
+                                <form action="">
+                                    <div class="radio-block">
+                                        <div class="radio-line">
+                                            <label for="del-1">
+                                                <input type="radio" name="deliv" id="del-1">
+                                                <span>Самовывоз из магазина</span>
+                                            </label>
+                                            <p class="free">Бесплатно</p>
+                                        </div>
+                                        <p>(г. Киев, ул. Тест 15, офис 1)</p>
+                                    </div>
+                                    <div class="radio-block active">
+                                        <div class="radio-line">
+                                            <label for="del-2">
+                                                <input type="radio" name="deliv" id="del-2" checked>
+                                                <span>Самовывоз из "Нова Пошта"</span>
+                                            </label>
+                                            <p>60 грн</p>
+                                        </div>
+                                        <div class="input-cont">
+                                            <input type="text" placeholder="Введите город и номер отделения">
+                                            <p>Проверяйте товар в отделении перед тем, как оплатить!</p>
+                                        </div>
+                                    </div>
+                                    <div class="radio-block">
+                                        <div class="radio-line">
+                                            <label for="del-3">
+                                                <input type="radio" name="deliv" id="del-3">
+                                                <span>Курьер "Нова Пошта"</span>
+                                            </label>
+                                            <p>80 грн</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="checkout-form__part">
+                        <div class="checkout-form__name">
+                            Выберите способ оплаты:
+                        </div>
+                        <div class="checkout-form__right">
+                            <div class="radio-line">
+                                <label for="pay-1">
+                                    <input type="radio" name="pay" id="pay-1">
+                                    <span>Наличными при получении</span>
+                                </label>
+
+                            </div>
+                            <div class="radio-line">
+                                <label for="pay-2">
+                                    <input type="radio" name="pay" id="pay-2">
+                                    <span>Безналичный расчет</span>
+                                </label>
+
+                            </div>
+                            <div class="radio-line">
+                                <label for="pay-3">
+                                    <input type="radio" name="pay" id="pay-3">
+                                    <span>Онлайн оплата картой (Visa, Mastercard)</span>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="cart-table__content">
-                    <div class="cart-table__line">
-                        <div class="cart-table__side">
-                            <a href="#" class="cart-table__info">
+                <div class="checkout-order">
+                    <div class="checkout-order__head">
+                        Ваш заказ
+                    </div>
+                    <div class="checkout-order__content">
+                        <div class="checkout-order__line">
+                            <div class="checkout-order__item">
                                 <div class="img">
                                     <img src="./img/crt-i-1.jpg" alt="">
                                 </div>
-                                <span>Код товара: BM27 </span>
-                                <p>Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные...</p>
-                            </a>
-                        </div>
-                        <div class="cart-table__side">
-                            <div class="cart-table__char">
-                                <p>Цвет: <strong>Черный</strong></p>
-                                <p>Материал: <strong>Пластик</strong></p>
-                                <p>Производитель: <strong>Россия</strong></p>
-
-
+                                <div class="text">
+                                    <p>Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные...</p>
+                                    <span>2 шт.</span>
+                                </div>
                             </div>
+                            <div class="price">900 грн</div>
                         </div>
-                        <div class="cart-table__side">
-                            <div class="quantity-field">
-                                <div class="quantity__button quantity__button--minus">
-                                    <button>-</button>
-                                </div>
-                                <div class="quantity">
-                                    <label for=""></label>
-                                    <input type="number" step="1" min="0" value="1">
-                                </div>
-                                <div class="quantity__button quantity__button--plus">
-                                    <button>+</button>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="cart-table__side">
-                            <bdi>Цена:</bdi>
-                            450 грн
-                        </div>
-                        <div class="cart-table__side">
-                            <bdi>Сумма:</bdi>
-                            <strong>900 грн</strong></div>
-                        <div class="cart-table__side">
-                            <button class="remove-item">
-                                <img src="./img/cancel-i.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="cart-table__line">
-                        <div class="cart-table__side">
-                            <a href="#" class="cart-table__info">
+                        <div class="checkout-order__line">
+                            <div class="checkout-order__item">
                                 <div class="img">
                                     <img src="./img/crt-i-1.jpg" alt="">
                                 </div>
-                                <span>Код товара: BM27 </span>
-                                <p>Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные...</p>
-                            </a>
-                        </div>
-                        <div class="cart-table__side">
-                            <div class="cart-table__char">
-                                <p>Цвет: <strong>Черный</strong></p>
-                                <p>Материал: <strong>Пластик</strong></p>
-                                <p>Производитель: <strong>Россия</strong></p>
-
-
+                                <div class="text">
+                                    <p>Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные...</p>
+                                    <span>2 шт.</span>
+                                </div>
                             </div>
+                            <div class="price">900 грн</div>
                         </div>
-                        <div class="cart-table__side">
-                            <div class="quantity-field">
-                                <div class="quantity__button quantity__button--minus">
-                                    <button>-</button>
-                                </div>
-                                <div class="quantity">
-                                    <label for=""></label>
-                                    <input type="number" step="1" min="0" value="1">
-                                </div>
-                                <div class="quantity__button quantity__button--plus">
-                                    <button>+</button>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="cart-table__side">
-                            <bdi>Цена:</bdi>
-                            450 грн
-                        </div>
-                        <div class="cart-table__side">
-                            <bdi>Сумма:</bdi>
-                            <strong>900 грн</strong></div>
-                        <div class="cart-table__side">
-                            <button class="remove-item">
-                                <img src="./img/cancel-i.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="cart-table__line">
-                        <div class="cart-table__side">
-                            <a href="#" class="cart-table__info">
+                        <div class="checkout-order__line">
+                            <div class="checkout-order__item">
                                 <div class="img">
                                     <img src="./img/crt-i-1.jpg" alt="">
                                 </div>
-                                <span>Код товара: BM27 </span>
-                                <p>Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные...</p>
-                            </a>
-                        </div>
-                        <div class="cart-table__side">
-                            <div class="cart-table__char">
-                                <p>Цвет: <strong>Черный</strong></p>
-                                <p>Материал: <strong>Пластик</strong></p>
-                                <p>Производитель: <strong>Россия</strong></p>
-
-
+                                <div class="text">
+                                    <p>Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные...</p>
+                                    <span>2 шт.</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cart-table__side">
-                            <div class="quantity-field">
-                                <div class="quantity__button quantity__button--minus">
-                                    <button>-</button>
-                                </div>
-                                <div class="quantity">
-                                    <label for=""></label>
-                                    <input type="number" step="1" min="0" value="1">
-                                </div>
-                                <div class="quantity__button quantity__button--plus">
-                                    <button>+</button>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="cart-table__side">
-                            <bdi>Цена:</bdi>
-                            450 грн
-                        </div>
-                        <div class="cart-table__side">
-                            <bdi>Сумма:</bdi>
-                            <strong>900 грн</strong></div>
-                        <div class="cart-table__side">
-                            <button class="remove-item">
-                                <img src="./img/cancel-i.svg" alt="">
-                            </button>
+                            <div class="price">900 грн</div>
                         </div>
                     </div>
+                    <div class="checkout-order__footer">
+                        <div class="checkout-footer__line">
+                            <span>Доставка:</span>
+                            <p>     60 грн
+                                <strong>(Самовывоз из «Нова Пошта»)</strong>
+                            </p>
+                        </div>
+                        <div class="checkout-footer__line">
+                            <span>Итого:</span>
+                            <p>2760 грн</p>
+                        </div>
+                        <div class="checkout-footer__btns">
+                            <button class="btn btn--paper">Оформить заказ</button>
+                            <button class="btn btn--white">Заказать в 1 клик</button>
+                        </div>
+                        <div class="radio-line">
+                            <label for="call">
+                                <input type="checkbox" name="call" id="call">
+                                <span>Не звонить мне для подтверждения заказа</span>
+                            </label>
+
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
-            <div class="cart-total">
-                <p>Итого: <strong>2700 грн</strong></p>
-                <a href="#" class="btn btn--paper">Оформить заказ</a>
-            </div>
-
         </div>
     </section>
     <section class="product-block js-slider has-shadow">

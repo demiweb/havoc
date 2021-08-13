@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/animate.css"/> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="./libs/slick.css">
+    <link rel="stylesheet" media="all" href="./libs/swiper.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+    <title>Главная</title>
+</head>
+<body>
+//= details/header.html
+<main>
+
+    <section class="banner">
+        <div class="img">
+            <img class="lazyload" data-src="./img/cabinet-bg.jpg" alt="">
+        </div>
+        <div class="container">
+            <div class="banner-container banner-container--cabinet">
+                <nav class="breadcrumbs">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><span>Личный кабинет</span></li>
+                    </ul>
+                </nav>
+                <div class="text">
+                    <h1>Приветствуем, Алексей Викторович!</h1>
+                    <button class="btn btn--white">Выйти <img src="./img/logout-1.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cabinet-control">
+        <div class="container">
+            <div class="cabinet-control__container">
+                <a href="#" class="active">Изменение личных данных</a>
+                <a href="#">История заказов</a>
+                <a href="#">Избранное</a>
+            </div>
+        </div>
+
+    </section>
+    <section class="cabinet">
+        <div class="container">
+            <div class="top-line">
+                <span>изменение личных данных</span>
+            </div>
+            <div class="cabinet__change">
+                <div class="left">
+                    <div class="checkout-form__part">
+                        <div class="checkout-form__name">
+                            Изменение ваших контактных данных:
+                        </div>
+                        <div class="checkout-form__right">
+                            <div class="form">
+                                <form action="">
+                                    <div class="form-change">
+                                        <label for="">Фамилия</label>
+                                        <input type="text" placeholder="фамилия" value="Ivanov">
+                                        <div class="form-delete">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-change">
+                                        <label for="">Имя</label>
+                                        <input type="text" placeholder="Имя" value="Ivanov">
+                                        <div class="form-delete">
+                                        </div>
+                                    </div>
+                                    <div class="form-change">
+                                        <label for="">Отчество</label>
+                                        <input type="text" placeholder="Отчество" value="Ivanov">
+                                        <div class="form-delete">
+                                        </div>
+                                    </div>
+                                    <div class="form-change">
+                                        <label for="">Email</label>
+                                        <input type="email" placeholder="Email" value="Ivanov">
+                                        <div class="form-delete">
+                                        </div>
+                                    </div>
+                                    <div class="form-change">
+                                        <label for="">Телефон</label>
+                                        <input type="text" placeholder="Телефон" value="+38(097) 521- 11- 27">
+                                        <div class="form-delete">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn--paper">Сохранить</button>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="checkout-form__part">
+                        <div class="checkout-form__name">
+                            Измените ваш пароль:
+                        </div>
+                        <div class="checkout-form__right">
+                            <div class="form">
+                                <form action="">
+                                    <div class="input-cont input-cont--pass">
+                                        <label for="">Старый пароль</label>
+                                        <input type="password" placeholder="Введите новый пароль">
+                                        <div class="icon">
+                                            <img src="./img/eye-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="input-cont input-cont--pass">
+                                        <label for="">Новый пароль</label>
+                                        <input type="password" placeholder="Введите новый пароль">
+                                        <div class="icon">
+                                            <img src="./img/eye-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="complex">
+                                        <button class="btn btn--paper">Сохранить</button>
+                                        <a href="#" class="btn btn--white">Я забыл пароль</a>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="cabinet has-shadow">
+        <div class="container">
+            <div class="top-line">
+                <span>История заказов</span>
+            </div>
+        </div>
+    </section>
+    <section class="cart-page has-shadow cabinet">
+        <div class="container">
+            <div class="top-line">
+                <span>Избранное</span>
+            </div>
+
+            <div class="cart-table">
+                <div class="cart-table__head">
+                    <div class="cart-table__name">Товар</div>
+                    <div class="cart-table__name">Характеристики</div>
+                    <div class="cart-table__name">Количество</div>
+                    <div class="cart-table__name">Цена</div>
+                    <div class="cart-table__name">Сумма</div>
+                    <div class="cart-table__name">Ред.</div>
+                </div>
+                <div class="cart-table__content">
+                    <div class="cart-table__line">
+                        <div class="cart-table__side">
+                            <a href="#" class="cart-table__info">
+                                <div class="img">
+                                    <img src="./img/crt-i-1.jpg" alt="">
+                                </div>
+                                <span>Код товара: BM27 </span>
+                                <p>Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные...</p>
+                            </a>
+                        </div>
+                        <div class="cart-table__side">
+                            <div class="cart-table__char">
+                                <p>Цвет: <strong>Черный</strong></p>
+                                <p>Материал: <strong>Пластик</strong></p>
+                                <p>Производитель: <strong>Россия</strong></p>
+
+
+                            </div>
+                        </div>
+                        <div class="cart-table__side">
+                            <div class="quantity-field">
+                                <div class="quantity__button quantity__button--minus">
+                                    <button>-</button>
+                                </div>
+                                <div class="quantity">
+                                    <label for=""></label>
+                                    <input type="number" step="1" min="0" value="1">
+                                </div>
+                                <div class="quantity__button quantity__button--plus">
+                                    <button>+</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cart-table__side">
+                            <bdi>Цена:</bdi>
+                            450 грн
+                        </div>
+                        <div class="cart-table__side">
+                            <bdi>Сумма:</bdi>
+                            <strong>900 грн</strong></div>
+                        <div class="cart-table__side">
+                            <button class="remove-item">
+                                <img src="./img/cancel-i.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-table__line">
+                        <div class="cart-table__side">
+                            <a href="#" class="cart-table__info">
+                                <div class="img">
+                                    <img src="./img/crt-i-1.jpg" alt="">
+                                </div>
+                                <span>Код товара: BM27 </span>
+                                <p>Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные...</p>
+                            </a>
+                        </div>
+                        <div class="cart-table__side">
+                            <div class="cart-table__char">
+                                <p>Цвет: <strong>Черный</strong></p>
+                                <p>Материал: <strong>Пластик</strong></p>
+                                <p>Производитель: <strong>Россия</strong></p>
+
+
+                            </div>
+                        </div>
+                        <div class="cart-table__side">
+                            <div class="quantity-field">
+                                <div class="quantity__button quantity__button--minus">
+                                    <button>-</button>
+                                </div>
+                                <div class="quantity">
+                                    <label for=""></label>
+                                    <input type="number" step="1" min="0" value="1">
+                                </div>
+                                <div class="quantity__button quantity__button--plus">
+                                    <button>+</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cart-table__side">
+                            <bdi>Цена:</bdi>
+                            450 грн
+                        </div>
+                        <div class="cart-table__side">
+                            <bdi>Сумма:</bdi>
+                            <strong>900 грн</strong></div>
+                        <div class="cart-table__side">
+                            <button class="remove-item">
+                                <img src="./img/cancel-i.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-table__line">
+                        <div class="cart-table__side">
+                            <a href="#" class="cart-table__info">
+                                <div class="img">
+                                    <img src="./img/crt-i-1.jpg" alt="">
+                                </div>
+                                <span>Код товара: BM27 </span>
+                                <p>Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные...</p>
+                            </a>
+                        </div>
+                        <div class="cart-table__side">
+                            <div class="cart-table__char">
+                                <p>Цвет: <strong>Черный</strong></p>
+                                <p>Материал: <strong>Пластик</strong></p>
+                                <p>Производитель: <strong>Россия</strong></p>
+
+
+                            </div>
+                        </div>
+                        <div class="cart-table__side">
+                            <div class="quantity-field">
+                                <div class="quantity__button quantity__button--minus">
+                                    <button>-</button>
+                                </div>
+                                <div class="quantity">
+                                    <label for=""></label>
+                                    <input type="number" step="1" min="0" value="1">
+                                </div>
+                                <div class="quantity__button quantity__button--plus">
+                                    <button>+</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cart-table__side">
+                            <bdi>Цена:</bdi>
+                            450 грн
+                        </div>
+                        <div class="cart-table__side">
+                            <bdi>Сумма:</bdi>
+                            <strong>900 грн</strong></div>
+                        <div class="cart-table__side">
+                            <button class="remove-item">
+                                <img src="./img/cancel-i.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+</main>
+//= details/footer.html
+//= details/scripts.html
+
+</body>
+</html>

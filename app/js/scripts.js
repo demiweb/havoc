@@ -667,3 +667,35 @@ function upValueQuant() {
     }
 }
 upValueQuant();
+
+let radioBtn = [...document.querySelectorAll('.radio-block')];
+
+function changeActiveRadioBtn() {
+    radioBtn.forEach((btn) => {
+        let input = btn.querySelector('label');
+        input.addEventListener('click', () => {
+            if (input.querySelector('input').checked === true) {
+                document.querySelector('.radio-block.active').classList.remove('active');
+                btn.classList.add('active');
+            }
+        })
+
+    })
+}
+
+changeActiveRadioBtn();
+
+let deleteInput = [...document.querySelectorAll('.form-delete')];
+
+function deleteInputText() {
+    if (!deleteInput.length) {
+
+    } else {
+        deleteInput.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.closest('.form-change').querySelector('input').value = '';
+            });
+        })
+    }
+}
+deleteInputText();
