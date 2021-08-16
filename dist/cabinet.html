@@ -193,14 +193,14 @@
     <section class="cabinet-control">
         <div class="container">
             <div class="cabinet-control__container">
-                <a href="#" class="active">Изменение личных данных</a>
-                <a href="#">История заказов</a>
-                <a href="#">Избранное</a>
+                <a href="#cabinet-profile" class="active">Изменение личных данных</a>
+                <a href="#cabinet-orders">История заказов</a>
+                <a href="#cabinet-favs">Избранное</a>
             </div>
         </div>
 
     </section>
-    <section class="cabinet">
+    <section id="cabinet-profile" class="cabinet">
         <div class="container">
             <div class="top-line">
                 <span>изменение личных данных</span>
@@ -291,14 +291,571 @@
             </div>
         </div>
     </section>
-    <section class="cabinet has-shadow">
+    <section id="cabinet-orders" class="cabinet has-shadow">
         <div class="container">
             <div class="top-line">
                 <span>История заказов</span>
             </div>
+            <div class="order-history">
+                <div class="history">
+                    <div class="history__head">
+                        <div class="history__cell">№</div>
+                        <div class="history__cell">Дата и время</div>
+                        <div class="history__cell">Количество</div>
+                        <div class="history__cell">Статус</div>
+                        <div class="history__cell">Оплата</div>
+                        <div class="history__cell">Сумма</div>
+                        <div class="history__cell">Инфо</div>
+
+                    </div>
+                    <div class="history__content">
+                        <div class="history__order">
+                            <div class="history__line">
+                                <div class="history__cell order-number"><bdi>№</bdi>722176</div>
+                                <div class="history__cell">14.07.2020 <br>
+                                    15:25
+                                </div>
+                                <div class="history__cell">8 товаров</div>
+                                <div class="history__cell">
+                                    <div class="status status--work"><img src="./img/stat-work.svg" alt="">В обработке
+                                    </div>
+                                </div>
+                                <div class="history__cell">Наличными</div>
+                                <div class="history__cell">2700 грн</div>
+                                <div class="history__cell order-det">
+                                    <p>Подробнее</p></div>
+                            </div>
+                            <div class="history__detail">
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="history__order">
+                            <div class="history__line">
+                                <div class="history__cell order-number">722176</div>
+                                <div class="history__cell">14.07.2020 <br>
+                                    15:25
+                                </div>
+                                <div class="history__cell">8 товаров</div>
+                                <div class="history__cell">
+                                    <div class="status status--good"><img src="./img/in-good.svg" alt="">Доставлен
+                                    </div>
+                                </div>
+                                <div class="history__cell">Наличными</div>
+                                <div class="history__cell">2700 грн</div>
+                                <div class="history__cell order-det">
+                                    <p>Подробнее</p></div>
+                            </div>
+                            <div class="history__detail">
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="history__order">
+                            <div class="history__line">
+                                <div class="history__cell order-number">722176</div>
+                                <div class="history__cell">14.07.2020 <br>
+                                    15:25
+                                </div>
+                                <div class="history__cell">8 товаров</div>
+                                <div class="history__cell">
+                                    <div class="status status--cancel"><img src="./img/in-cancel.svg" alt="">Отклонен
+                                    </div>
+                                </div>
+                                <div class="history__cell">Наличными</div>
+                                <div class="history__cell">2700 грн</div>
+                                <div class="history__cell order-det">
+                                    <p>Подробнее</p></div>
+                            </div>
+                            <div class="history__detail">
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="history__order">
+                            <div class="history__line">
+                                <div class="history__cell order-number">722176</div>
+                                <div class="history__cell">14.07.2020 <br>
+                                    15:25
+                                </div>
+                                <div class="history__cell">8 товаров</div>
+                                <div class="history__cell">
+                                    <div class="status status--way"><img src="./img/in-way.svg" alt="">В пути
+                                    </div>
+                                </div>
+                                <div class="history__cell">Наличными</div>
+                                <div class="history__cell">2700 грн</div>
+                                <div class="history__cell order-det">
+                                    <p>Подробнее</p></div>
+                            </div>
+                            <div class="history__detail">
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="history__single">
+                                    <div class="left">
+                                        <div class="single-history">
+                                            <div class="history__item">
+                                                <div class="img">
+                                                    <a href="#">
+                                                        <img src="./img/crt-i-1.jpg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div class="text">
+                                                    <span>Код товара: BM27 </span>
+                                                    <a href="#">Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цвет: <strong>Черный</strong></p>
+                                            <p>Материал: <strong>Пластик</strong></p>
+                                            <p>Производитель: <strong>Россия</strong></p>
+                                        </div>
+                                        <div class="single-history">
+                                            <p>Цена за шт.: <strong>450 грн</strong></p>
+                                            <p>Сумма: <strong>900 грн</strong></p>
+                                            <p>Количество: <strong>2</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="history__deliv">
+                                            <p>Способ доставки: <strong>Курьер «Нова Пошта»</strong><img src="./img/np-lg-b.svg" alt=""></p>
+                                            <p>Номер накладной</p>
+                                            <span>1441 1463 6337 2112</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
-    <section class="cart-page has-shadow cabinet">
+    <section id="cabinet-favs" class="cart-page  has-shadow cabinet">
         <div class="container">
             <div class="top-line">
                 <span>Избранное</span>
@@ -359,52 +916,8 @@
                             <button class="remove-item">
                                 <img src="./img/cancel-i.svg" alt="">
                             </button>
-                        </div>
-                    </div>
-                    <div class="cart-table__line">
-                        <div class="cart-table__side">
-                            <a href="#" class="cart-table__info">
-                                <div class="img">
-                                    <img src="./img/crt-i-1.jpg" alt="">
-                                </div>
-                                <span>Код товара: BM27 </span>
-                                <p>Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные...</p>
-                            </a>
-                        </div>
-                        <div class="cart-table__side">
-                            <div class="cart-table__char">
-                                <p>Цвет: <strong>Черный</strong></p>
-                                <p>Материал: <strong>Пластик</strong></p>
-                                <p>Производитель: <strong>Россия</strong></p>
-
-
-                            </div>
-                        </div>
-                        <div class="cart-table__side">
-                            <div class="quantity-field">
-                                <div class="quantity__button quantity__button--minus">
-                                    <button>-</button>
-                                </div>
-                                <div class="quantity">
-                                    <label for=""></label>
-                                    <input type="number" step="1" min="0" value="1">
-                                </div>
-                                <div class="quantity__button quantity__button--plus">
-                                    <button>+</button>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="cart-table__side">
-                            <bdi>Цена:</bdi>
-                            450 грн
-                        </div>
-                        <div class="cart-table__side">
-                            <bdi>Сумма:</bdi>
-                            <strong>900 грн</strong></div>
-                        <div class="cart-table__side">
-                            <button class="remove-item">
-                                <img src="./img/cancel-i.svg" alt="">
+                            <button class="remove-item remove-item--fav">
+                                <img src="./img/fav-2-2.svg" alt="">
                             </button>
                         </div>
                     </div>
@@ -452,6 +965,59 @@
                         <div class="cart-table__side">
                             <button class="remove-item">
                                 <img src="./img/cancel-i.svg" alt="">
+                            </button>
+                            <button class="remove-item remove-item--fav">
+                                <img src="./img/fav-2-2.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-table__line">
+                        <div class="cart-table__side">
+                            <a href="#" class="cart-table__info">
+                                <div class="img">
+                                    <img src="./img/crt-i-1.jpg" alt="">
+                                </div>
+                                <span>Код товара: BM27 </span>
+                                <p>Ветровики на Audi Q7 с 2015 Кобра Тюнинг накладные...</p>
+                            </a>
+                        </div>
+                        <div class="cart-table__side">
+                            <div class="cart-table__char">
+                                <p>Цвет: <strong>Черный</strong></p>
+                                <p>Материал: <strong>Пластик</strong></p>
+                                <p>Производитель: <strong>Россия</strong></p>
+
+
+                            </div>
+                        </div>
+                        <div class="cart-table__side">
+                            <div class="quantity-field">
+                                <div class="quantity__button quantity__button--minus">
+                                    <button>-</button>
+                                </div>
+                                <div class="quantity">
+                                    <label for=""></label>
+                                    <input type="number" step="1" min="0" value="1">
+                                </div>
+                                <div class="quantity__button quantity__button--plus">
+                                    <button>+</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cart-table__side">
+                            <bdi>Цена:</bdi>
+                            450 грн
+                        </div>
+                        <div class="cart-table__side">
+                            <bdi>Сумма:</bdi>
+                            <strong>900 грн</strong></div>
+                        <div class="cart-table__side">
+                            <button class="remove-item">
+                                <img src="./img/cancel-i.svg" alt="">
+                            </button>
+                            <button class="remove-item remove-item--fav">
+                                <img src="./img/fav-2-2.svg" alt="">
                             </button>
                         </div>
                     </div>
