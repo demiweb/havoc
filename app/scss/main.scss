@@ -4283,6 +4283,60 @@ textarea {
   width: 100%;
   display: none;
 
+  table {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    padding: 0;
+    border-collapse: collapse;
+
+    thead {
+      margin-top: 10px;
+      display: block;
+
+      padding: 0 10px 10px;
+      box-sizing: border-box;
+      width: 100%;
+
+    }
+
+    tbody {
+
+
+      box-sizing: border-box;
+
+      &:last-child {
+        tr {
+          border: none;
+        }
+      }
+
+      tr {
+        width: 100%;
+        display: flex;
+        padding: 0 10px 10px;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+        td {
+          width: 70%;
+
+          &:first-child {
+            width: 30%;
+          }
+        }
+      }
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 14px;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: bold;
+    }
+  }
 
   &--video {
     align-items: center;
@@ -5045,14 +5099,17 @@ textarea {
     width: 12px;
     height: 12px;
   }
+
   &--fav {
 
     img {
       width: 16px;
       height: 16px;
     }
+
     margin-left: 8px;
   }
+
   &:hover {
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
   }
@@ -6201,10 +6258,12 @@ input[type=number] {
     border-bottom: none;
 
   }
+
   &.open {
     .history__detail {
       display: flex;
     }
+
     .order-det.history__cell {
       p {
         &::after {
@@ -6229,9 +6288,11 @@ input[type=number] {
     display: flex;
     align-items: center;
     justify-content: center;
+
     bdi {
       display: none;
     }
+
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -6295,6 +6356,7 @@ input[type=number] {
   align-items: stretch;
   justify-content: flex-start;
   border-bottom: 1px solid #E1E1E1;
+
   &:last-child {
     border-bottom: none;
   }
@@ -6317,6 +6379,7 @@ input[type=number] {
     box-sizing: border-box;
   }
 }
+
 .single-history {
   width: 29.4%;
   display: flex;
@@ -6324,6 +6387,7 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: column;
   flex-shrink: 0;
+
   > p {
     font-style: normal;
     font-weight: normal;
@@ -6332,10 +6396,12 @@ input[type=number] {
     text-align: center;
     color: #919191;
   }
+
   strong {
     font-weight: normal;
     color: #4B4649;
   }
+
   &:first-child {
     flex-grow: 1;
     width: auto;
@@ -6344,28 +6410,33 @@ input[type=number] {
     box-sizing: border-box;
   }
 }
+
 .history__item {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
   .img {
     width: 82px;
     height: 56px;
     flex-shrink: 0;
     overflow: hidden;
     margin-right: 20px;
+
     img {
-      width:  100%;
+      width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
+
   .text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+
     span {
       font-style: normal;
       font-weight: normal;
@@ -6377,6 +6448,7 @@ input[type=number] {
 
       color: #909090;
     }
+
     a {
       font-style: normal;
       font-weight: normal;
@@ -6385,18 +6457,21 @@ input[type=number] {
       color: #4B4649;
       text-decoration: none;
       margin-top: 3px;
+
       &:hover {
         text-decoration: underline;
       }
     }
   }
 }
+
 .history__deliv {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+
   p {
     font-style: normal;
     font-weight: normal;
@@ -6413,17 +6488,20 @@ input[type=number] {
     flex-wrap: wrap;
 
   }
-  strong  {
+
+  strong {
     font-weight: normal;
     color: #4B4649;
     margin-left: 3px;
   }
+
   img {
     width: auto;
     height: auto;
     max-width: 43px;
     margin-left: 7px;
   }
+
   span {
     display: inline-block;
     width: 100%;
